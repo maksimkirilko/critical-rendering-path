@@ -1,1 +1,11 @@
 node_modules/
+.idea
+.vscode
+typings
+jspm_packages
+*.js.map
+npm-debug*.
+*.d.ts
+.DS_Store
+dist
+build
