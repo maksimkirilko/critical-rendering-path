@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/yankouskia/critical-rendering-path#readme",
   "devDependencies": {
+    "cssnano": "^3.10.0",
     "http-server": "^0.10.0",
     "psi-local": "^1.0.0"
   }
