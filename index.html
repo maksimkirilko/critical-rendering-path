@@ -186,10 +186,8 @@
         unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
       }
     </style>
-    <script async>
-        document.addEventListener('DOMContentLoaded', DOMready);
-
-        function DOMready() {
+    <script>
+        window.onload = function() {
             const image = new Image();
             image.src = 'img/profilepic.jpg';
             image.alt = 'Cameron Pittman';
@@ -199,7 +197,7 @@
             image2.src = 'img/mk.png';
             image2.alt = 'Maksim Kirylka';
             document.getElementById('mk_photo').appendChild(image2);
-        }
+        };
     </script>
   </head>
 
