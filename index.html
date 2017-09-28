@@ -188,17 +188,52 @@
     </style>
     <script>
         window.onload = function() {
+            const images = [
+                {
+                    title: 'Cameron Pittman',
+                    name: 'cameron_pittman',
+                    container: 'cp_photo',
+                    src: 'img/profilepic.jpg'
+                },
+                {
+                    title: 'Maksim Kirylka',
+                    name: 'maksim_kirylka',
+                    container: 'mk_photo',
+                    src: 'img/mk.png'
+                },
+                {
+                    title: 'lh4',
+                    name: 'lh4',
+                    container: 'lh4',
+                    src: 'img/lh4.jpg'
+                },
+                {
+                    title: 'lh6',
+                    name: 'lh4',
+                    container: 'lh6',
+                    src: 'img/lh6.jpg'
+                },
+                {
+                    title: 'lh5',
+                    name: 'lh5',
+                    container: 'lh5',
+                    src: 'img/lh5.jpg'
+                },
+                {
+                    title: 'pizzeria',
+                    name: 'pizzeria',
+                    container: 'pizzeria',
+                    src: 'views/images/pizzeria.jpg'
+                },
+            ];
             setTimeout(function () {
-                const image = new Image();
-                image.src = 'img/profilepic.jpg';
-                image.alt = 'Cameron Pittman';
-                document.getElementById('cp_photo').appendChild(image);
-
-                const image2 = new Image();
-                image2.src = 'img/mk.png';
-                image2.alt = 'Maksim Kirylka';
-                document.getElementById('mk_photo').appendChild(image2);
-            }, 5000);
+                images.forEach((img) => {
+                  const image = new Image();
+                  image.src = img.src;
+                  image.alt = img.title;
+                  document.getElementById(img.container).appendChild(image);
+                });
+            }, 1000);
         };
     </script>
   </head>
@@ -224,25 +259,25 @@
       <div class="content">
         <ul>
           <li>
-            <!--<img src="img/lh4.jpg">-->
+            <span id="lh4"><!--<img src="img/lh4.jpg">--></span>
             <a href="project-2048.html">Build Your Own 2048!</a>
             <p>I made my own version of 2048. How cool is that!?</p>
           </li>
 
           <li>
-            <!--<img src="img/lh6.jpg">-->
+            <span id="lh6"><!--<img src="img/lh6.jpg">--></span>
             <a href="project-webperf.html">Website Performance Optimization</a>
             <p>Hey... this class looks familiar.</p>
           </li>
 
           <li>
-            <!--<img src="img/lh5.jpg">-->
+            <span id="lh5"><!--<img src="img/lh5.jpg">--></span>
             <a href="project-mobile.html">Mobile Web Development</a>
             <p>Making mobile apps isn't so hard after all.</p>
           </li>
 
           <li>
-            <!--<img style="width: 100px;" src="views/images/pizzeria.jpg">-->
+            <span id="pizzeria"><!--<img style="width: 100px;" src="views/images/pizzeria.jpg">--></span>
             <a href="views/pizza.html">Cam's Pizzeria</a>
             <p>Who wants a performant pizza?</p>
           </li>
