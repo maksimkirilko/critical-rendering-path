@@ -186,69 +186,19 @@
         unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
       }
     </style>
-    <script>
-//        window.onload = function() {
-//            const images = [
-//                {
-//                    title: 'Cameron Pittman',
-//                    name: 'cameron_pittman',
-//                    container: 'cp_photo',
-//                    src: 'img/profilepic.jpg'
-//                },
-//                {
-//                    title: 'Maksim Kirylka',
-//                    name: 'maksim_kirylka',
-//                    container: 'mk_photo',
-//                    src: 'img/mk.png'
-//                },
-//                {
-//                    title: 'lh4',
-//                    name: 'lh4',
-//                    container: 'lh4',
-//                    src: 'img/lh4.jpg'
-//                },
-//                {
-//                    title: 'lh6',
-//                    name: 'lh4',
-//                    container: 'lh6',
-//                    src: 'img/lh6.jpg'
-//                },
-//                {
-//                    title: 'lh5',
-//                    name: 'lh5',
-//                    container: 'lh5',
-//                    src: 'img/lh5.jpg'
-//                },
-//                {
-//                    title: 'pizzeria',
-//                    name: 'pizzeria',
-//                    container: 'pizzeria',
-//                    src: 'views/images/pizzeria.jpg'
-//                },
-//            ];
-//            setTimeout(function () {
-//                images.forEach((img) => {
-//                  const image = new Image();
-//                  image.src = img.src;
-//                  image.alt = img.title;
-//                  document.getElementById(img.container).appendChild(image);
-//                });
-//            }, 1000);
-//        };
-    </script>
   </head>
 
   <body>
     <header>
       <div class="developer">
-        <a href="/" id="cp_photo"></a>
+        <a href="/"><img src="https://image.ibb.co/mxQLab/profilepic.jpg" alt="profilepic" border="0"></a>
         <p>Cameron Pittman<br><span>Course Developer</span></p>
       </div>
       <div class="hero">
         <strong>I love web development!</strong> This is a template for a simple portfolio. I decided to use it to showcase a few Udacity courses I've taken and some teaching work, but you can use it to showcase any kind of project that you want the world to see :) <br> Contact me: me@email.com
       </div>
       <div class="developer">
-        <a href="/" id="mk_photo"></a>
+        <a href="/"><img src="https://image.ibb.co/mfSoTw/mk.png" alt="mk" border="0"></a>
         <p>Maksim Kirilko<br><span>JS Developer</span></p>
       </div>
       <div class="hero">
@@ -259,19 +209,19 @@
       <div class="content">
         <ul>
           <li>
-            <span id="lh4"><!--<img src="img/lh4.jpg">--></span>
+            <img src="https://image.ibb.co/hAiHMG/lh4.jpg"/>
             <a href="project-2048.html">Build Your Own 2048!</a>
             <p>I made my own version of 2048. How cool is that!?</p>
           </li>
 
           <li>
-            <span id="lh6"><img src="https://image.ibb.co/hAiHMG/lh4.jpg"></span>
+            <img src="https://image.ibb.co/hv8HMG/lh5.jpg" alt="lh5"/>
             <a href="project-webperf.html">Website Performance Optimization</a>
             <p>Hey... this class looks familiar.</p>
           </li>
 
           <li>
-            <span id="lh5"><!--<img src="img/lh5.jpg">--></span>
+            <img src="https://image.ibb.co/i5MF8w/lh6.jpg"/>
             <a href="project-mobile.html">Mobile Web Development</a>
             <p>Making mobile apps isn't so hard after all.</p>
           </li>
@@ -288,12 +238,6 @@
         <p>&copy; Web Performance 2014 <span id="crp-stats"></span></p>
       </footer>
     </div>
-    <!--<script async>-->
-      <!--/*! loadCSS. [c]2017 Filament Group, Inc. MIT License */-->
-      <!--!function(a){"use strict";var b=function(b,c,d){function e(a){return h.body?a():void setTimeout(function(){e(a)})}function f(){i.addEventListener&&i.removeEventListener("load",f),i.media=d||"all"}var g,h=a.document,i=h.createElement("link");if(c)g=c;else{var j=(h.body||h.getElementsByTagName("head")[0]).childNodes;g=j[j.length-1]}var k=h.styleSheets;i.rel="stylesheet",i.href=b,i.media="only x",e(function(){g.parentNode.insertBefore(i,c?g:g.nextSibling)});var l=function(a){for(var b=i.href,c=k.length;c&#45;&#45;;)if(k[c].href===b)return a();setTimeout(function(){l(a)})};return i.addEventListener&&i.addEventListener("load",f),i.onloadcssdefined=l,l(f),i};"undefined"!=typeof exports?exports.loadCSS=b:a.loadCSS=b}("undefined"!=typeof global?global:this);-->
-      <!--/*! loadCSS rel=preload polyfill. [c]2017 Filament Group, Inc. MIT License */-->
-      <!--!function(a){if(a.loadCSS){var b=loadCSS.relpreload={};if(b.support=function(){try{return a.document.createElement("link").relList.supports("preload")}catch(b){return!1}},b.poly=function(){for(var b=a.document.getElementsByTagName("link"),c=0;c<b.length;c++){var d=b[c];"preload"===d.rel&&"style"===d.getAttribute("as")&&(a.loadCSS(d.href,d,d.getAttribute("media")),d.rel=null)}},!b.support()){b.poly();var c=a.setInterval(b.poly,300);a.addEventListener&&a.addEventListener("load",function(){b.poly(),a.clearInterval(c)}),a.attachEvent&&a.attachEvent("onload",function(){a.clearInterval(c)})}}}(this);-->
-    <!--</script>-->
     <script async>
         (function(w,g){w['GoogleAnalyticsObject']=g;
             w[g]=w[g]||function(){(w[g].q=w[g].q||[]).push(arguments)};w[g].l=1*new Date();})(window,'ga');
