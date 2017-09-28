@@ -188,15 +188,17 @@
     </style>
     <script>
         window.onload = function() {
-            const image = new Image();
-            image.src = 'img/profilepic.jpg';
-            image.alt = 'Cameron Pittman';
-            document.getElementById('cp_photo').appendChild(image);
+            setTimeout(function () {
+                const image = new Image();
+                image.src = 'img/profilepic.jpg';
+                image.alt = 'Cameron Pittman';
+                document.getElementById('cp_photo').appendChild(image);
 
-            const image2 = new Image();
-            image2.src = 'img/mk.png';
-            image2.alt = 'Maksim Kirylka';
-            document.getElementById('mk_photo').appendChild(image2);
+                const image2 = new Image();
+                image2.src = 'img/mk.png';
+                image2.alt = 'Maksim Kirylka';
+                document.getElementById('mk_photo').appendChild(image2);
+            }, 5000);
         };
     </script>
   </head>
